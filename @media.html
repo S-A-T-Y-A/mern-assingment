@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 50%;
+            height: auto;
+            display: none;
+        }
+        @media(min-width:1200px){
+            #img-1{
+                display: block;
+            }
+        }
+        @media(min-width:900px) and (max-width:1200px){
+            #img-2{
+                display: block;
+            }
+        }
+        @media(min-width:500px) and (max-width:900px){
+            #img-3{
+                display: block;
+            }
+        }
+        @media(max-width:500px){
+            #img-4{
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <img src="https://jooinn.com/images/dramatic-landscape-7.jpg" alt="" id="img-1">
+    <img src="http://www.thewowstyle.com/wp-content/uploads/2015/01/nature-image.jpg" alt="" id="img-2">
+    <img src="https://jooinn.com/images/colorful-forest-4.jpg" alt="" id="img-3">
+    <img src="http://www.bucketlistpublications.com/wp-content/uploads/2016/09/mauritius-waters.jpg" alt="" id="img-4">
+</body>
+</html>
