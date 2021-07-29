@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+:root{
+  --blue: #1cb4da;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(45, 45,45);
+    
+    font-size: 1.2rem;
+    background: linear-gradient(
+      270deg,
+      rgb(30, 84, 200) 0%,
+      rgb(31, 167, 114) 100%
+    );
+  }
+
+
+.container{
+  background: linear-gradient(to top,rgba(210, 243, 235, 0.8),rgba(233, 238, 235, 0.3));
+  border-radius: 20px;
+  width: 80%;
+  height: fit-content;
+  margin: 10px auto;
+  padding: 15px;
+  box-shadow: 0px 30px 50px rgb(170, 169, 170) ;
+  
+}
+.heighlight{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2.5px;
+  -webkit-text-stroke-color: rgb(8, 50, 88);
+}
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+nav .ntg{
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+justify-content: space-around;
+align-items: center;
+flex-basis: 40%;
+}
+nav ul li{
+  list-style: none;
+padding: 5px 15px;
+  border-radius: 30px;
+}
+nav ul li a{
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.profile{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10px;
+}
+.content{
+  margin: 10px;
+  flex-basis: 60%;
+  text-align: center;
+}
+.content p{
+  font-size: 1em;
+}
+.content h1{
+  font-size: 2.5em;
+  color: rgb(18, 63, 104);
+}
+.profile img{
+  width: 300px;
+  border-radius: 100%;
+  box-shadow:   0px 20px 40px rgb(70, 89, 107) ;
+}
+img:hover{
+  box-shadow: 0px 30px 60px rgb(36, 45, 54) ;
+ 
+}
+.about-text{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+.icons a{
+  text-align: center;
+  color: rgb(18, 63, 104);
+  padding: 5px ;
+  padding-top: 8px;
+  width: 40px;
+  height: 40px;
+  margin: 0px 20px;
+  border-radius: 50%;
+  
+}
+ li:hover ,a:hover{
+  background-color: rgb(18, 63, 104);
+  color: white;
+}
