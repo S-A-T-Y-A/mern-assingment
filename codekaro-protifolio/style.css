@@ -29,6 +29,17 @@
   margin: 10px auto;
   padding: 15px;
   box-shadow: 0px 30px 50px rgb(170, 169, 170) ;
+  animation: container 1s linear;
+}
+@keyframes container {
+  from{
+    opacity: 0;
+    transform: translatex(100%);
+  }
+  to{
+    opacity: 1;
+    transform: translatex(0%);
+  }
   
 }
 .heighlight{
@@ -57,14 +68,20 @@ flex-basis: 40%;
 }
 nav ul li{
   list-style: none;
-padding: 5px 15px;
-  border-radius: 30px;
 }
 nav ul li a{
   color: white;
   text-align: center;
+  width: 100%;
   font-weight: bolder;
   text-decoration: none;
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin: 3px 5px;
+}
+a{
+  transition: all 0.8s ease;
+
 }
 .profile{
   display: flex;
@@ -89,11 +106,22 @@ nav ul li a{
   width: 300px;
   border-radius: 100%;
   box-shadow:   0px 20px 40px rgb(70, 89, 107) ;
+  /* transition: box-shadow 0.6s ease; */
+  cursor: none;
+  animation: img 4s infinite;
+  
 }
-img:hover{
-  box-shadow: 0px 30px 60px rgb(36, 45, 54) ;
- 
+@keyframes img {
+  from{
+    box-shadow: none;
+    
+  }
+  to{
+    box-shadow: 0px 30px 60px rgb(36, 45, 54) ;
+    
+  }
 }
+
 .about-text{
   width: 100%;
   text-align: center;
@@ -118,7 +146,25 @@ img:hover{
   border-radius: 50%;
   
 }
- li:hover ,a:hover{
+ a:hover{
   background-color: rgb(18, 63, 104);
   color: white;
+  
+}
+@media (max-width:900px){
+  .profile img{
+    width: 150px;
+  }
+  .content p{
+    font-size: 0.8em;
+  }
+  .content h1{
+    font-size: 1.8em;
+    color: rgb(18, 63, 104);
+  }
+  .about-text{
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+  }
 }

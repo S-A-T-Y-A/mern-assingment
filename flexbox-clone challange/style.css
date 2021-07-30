@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+}
+.title h1{
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 3px 5px;
+    color: rgb(43, 40, 40);
+}
+.title h1 span{
+    color: rgb(20, 106, 192);
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin: 1em auto;
+    padding: 2em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 24vw;
+    flex-shrink: 1;
+    height: auto;
+    margin: 5px;
+    border-radius: 18px;
+    border: 1px solid rgb(189, 187, 187);
+    text-align: center;
+    padding: 20px 4px;
+    margin: 10px 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.card img{
+    margin: 5px 3px 3px 3px;
+}
+.card h2{
+    margin:3px;
+    margin-bottom: 5px;
+    color: rgb(43, 40, 40);
+}
+.card p{
+    font-size: 20px;
+    color: #495057;
+    font-weight: 400;
+    margin-top: 1.4em;
+    margin: 10px ;
+}
+@media(max-width:768px){
+    .card{
+        width: 80vw;
+    }
+}
+@media ( min-width:768px) and (max-width:1000px){
+    .card{
+        width: 42vw;
+    }
+}
