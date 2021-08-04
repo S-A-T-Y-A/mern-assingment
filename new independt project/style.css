@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/warior.jpg);
+    background-size:cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 100%;
+}
+.navbar{
+    position: absolute;
+    top: 5vh;
+    width: 100%;
+    min-height: 8vh;
+   
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-left: 5px;
+}
+.navbar ul li{
+    list-style: none;
+    /* background-color: #FF4848; */
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    border-radius:10px 0px  50px 0px;
+    cursor: pointer;
+}
+.navbar ul li a{
+    color: #FF4848;
+    text-decoration: none;
+    font-size: 24px;
+    font-variant: small-caps;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    
+}
+.navbar i{
+    color:#f72727 ;
+    margin: 0px 5px;
+}
+.navbar ul li:hover {
+    background-color: #FF4848;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 0px 10px #f72727;
+}
+.navbar ul li:hover a{
+    color: lavender;
+}
+.navbar ul li:hover i{
+    color: lavender;
+}
+
+.content{
+    position: absolute;
+    top: 35vh;
+    left: 5vw;
+}
+h1{
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    letter-spacing: 3px;
+    color: #f72727;
+    animation: color;
+    
+}
+p{
+    margin-top: 2em;
+    font-size: 16px;
+    font-family: 'Ubuntu',sans-serif;
+    letter-spacing: 1px;
+
+}
+
