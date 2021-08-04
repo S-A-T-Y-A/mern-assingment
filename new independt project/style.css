@@ -21,14 +21,17 @@ body{
    
 }
 .navbar ul{
+    position: relative;
+    left: 3vw;
     display: flex;
-    justify-content: space-evenly;
-    width: 50vw;
+    justify-content: left;
+    width: 100%;
     margin-left: 5px;
 }
 .navbar ul li{
     list-style: none;
     /* background-color: #FF4848; */
+    margin-left: 2vw;
     padding: 0.5rem 1.5rem 0.5rem 1rem;
     border-radius:10px 0px  50px 0px;
     cursor: pointer;
@@ -44,8 +47,9 @@ body{
     
 }
 .navbar i{
-    color:#f72727 ;
+    color:#ee1010 ;
     margin: 0px 5px;
+    font-size: 20px;
 }
 .navbar ul li:hover {
     background-color: #FF4848;
@@ -80,4 +84,45 @@ p{
     letter-spacing: 1px;
 
 }
-
+@media (max-width:900px) {
+    .navbar ul{
+        left: 0;
+        width: 100%;
+    }
+    
+    .navbar ul li a{
+        font-size: 20px;
+    }
+    .navbar ul li a i{
+        font-size: 21px;
+    }
+    h1{
+        font-size: 2.2em;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+@media (max-width:600px) {
+    .navbar ul{
+        left: 0;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .navbar ul li{
+        padding-right: 18px;
+    }
+    .navbar ul li a{
+        font-size: 17px;
+        padding-left: 2px;
+    }
+    .navbar ul li i{
+        font-size: 18px;
+        margin:  0px;
+    }
+    h1{
+        font-size: 1.85em;
+    }
+    
+    
+}
