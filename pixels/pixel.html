@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pixel button</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20vh;
+            background: rgb(10, 10, 10);
+
+        }
+        .btn{
+         width: 120px;
+         height: fit-content;
+         padding: 10px 15px;
+         text-align: center;
+         font-size: 20px;
+         text-decoration: none;
+         font-weight: bold;
+         letter-spacing: 3px;
+         color: white;
+        
+        }
+        .btn:hover{
+            background:  url(img/pixel-1.png);
+            background-size: cover;
+            animation: pixel 0.7s steps(8) forwards;
+        }
+        
+        
+
+        @keyframes pixel {
+            from{
+                background-position-y:top;
+                opacity: 0;
+            }
+            to{
+                background-position-y: bottom;
+                opacity: 1;
+            }
+            
+        }
+     
+    </style>
+</head>
+<body>
+    <a href="#" class="btn">PIXEL</a>
+</body>
+</html>
