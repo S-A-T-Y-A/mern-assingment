@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            width: 300px;
+            height: 150px;
+            border-radius: 20px;
+            position: absolute;
+            /* border: 2px solid red; */
+            top: 25%;
+            right: 45%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+       
+        .con:hover{
+            transform: rotate(-3deg);
+            transform-origin:0% bottom;
+            transition: transform 0.5s ease-in-out;
+        }
+       
+        img{
+            width: 400px;
+            height: auto;
+           position: relative;
+        }
+        img:hover{
+            transform:scale(1.1);
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img src="ocean.jpeg" alt="">
+    </div>
+   
+</body>
+</html>
