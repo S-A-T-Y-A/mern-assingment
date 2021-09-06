@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(63, 62, 62);
+}
+.top-user h1{
+    font-size: 2em;
+}
+.user{
+    border-radius: 100%;
+}
+.policyes{
+    flex-wrap: wrap;
+}
+.card{
+    justify-content: space-between!important;
+    flex-basis: 30em;
+    border-radius: 10px !important;
+    
+}
+.side{
+    flex-basis: 100%;
+}
+.card-img{
+    flex-basis: 50%;
+}
+.side h3{
+    font-size: 1.4em;
+}
