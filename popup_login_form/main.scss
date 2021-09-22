@@ -1,0 +1,32 @@
+$theme-colors: (
+  "primary":    #0E49B5,
+  "secondary":  #099097,
+  "dark": #111e31,
+  "light": #b3d6f7
+  
+);
+$container-max-widths: (
+  sm: 300px,
+  md: 80%,
+  lg: 300px
+  
+);
+input{
+    border: none !important;
+    outline: none;
+    border-radius: 4px !important;
+}
+button{
+    border: none;
+}
+.card_show{
+ display: block !important;
+ transition: all 2s ease !important;
+}
+body{
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
