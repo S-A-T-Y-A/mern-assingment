@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 body{
-    background-color: black;
+    background-color: rgb(7, 7, 7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,17 +27,17 @@ body{
     height: 10em;
     border: 0.45em double white ;
     border-radius: 50%;
+    display: none;
     justify-content: center;
     align-items: center;
-    width: 0;
-    display: none;
+    width: 0em;
 }
 .coin_show{
     width: 10em;
     display: flex;
 }
 
-/* .coin_flip{
+ /* .coin_flip{
     animation: flip 0.5s 4;
 }
 @keyframes flip {
@@ -57,7 +57,7 @@ body{
     
     }
     
-} */
+}  */
 h1{
     color: rgb(87, 163, 240);
 }

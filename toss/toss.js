@@ -10,7 +10,7 @@ btn.addEventListener("click",()=>{
     let flip_num=Math.floor(Math.random()*2);
     toss.innerHTML=toss_list[flip_num]
     no_of_flips++;
-    console.log(no_of_flips)
+    
     coin.classList.add("coin_show")
     flip_block.style.display="flex";
     btn_txt.innerHTML="Flip"
