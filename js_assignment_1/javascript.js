@@ -13,10 +13,13 @@ function q1(){
     if(q2_area.style.display!='none'){
         q2_area.style.display='none';
         q1_area.style.display='flex';
+        console.log("q1 if");
     } 
     else if(q3_area.style.display!='none'){
         q3_area.style.display='none';
         q1_area.style.display='flex';
+        console.log("q1 elseif");
+
     }
 
 
@@ -42,11 +45,14 @@ function q2(){
     if(q1_area.style.display!='none'){
         q1_area.style.display='none';
         q2_area.style.display='flex';
+        console.log("q2 if");
         
     } 
     else if(q3_area.style.display!='none'){
         q3_area.style.display='none';
         q2_area.style.display='flex';
+        console.log("q2 elseif");
+
     }
     // q2_area.classList.toggle("question_area_show");
     
@@ -69,11 +75,14 @@ function q3(){
     if(q1_area.style.display!='none'){
         q1_area.style.display='none';
         q3_area.style.display='flex';
+        console.log("q3 if");
         
     } 
     else if(q2_area.style.display!='none'){
         q2_area.style.display='none';
         q3_area.style.display='flex';
+        console.log("q3 elseif");
+
     }
     
     // q3_area.classList.toggle('question_area_show');
