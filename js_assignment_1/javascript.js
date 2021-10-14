@@ -5,11 +5,22 @@ const question_1=document.querySelector(".q1");
 const question_2=document.querySelector(".q2");
 const question_3=document.querySelector(".q3");
 console.log(question_3)
-
+const q1_area=document.querySelector(".question_area");
+const q2_area=document.querySelector(".question_2");
+const q3_area=document.querySelector(".question_3");
 // question 1
 function q1(){
-const q1_area=document.querySelector(".question_area");
-q1_area.classList.toggle('question_area_show');
+    if(q2_area.style.display!='none'){
+        q2_area.style.display='none';
+        q1_area.style.display='flex';
+    } 
+    else if(q3_area.style.display!='none'){
+        q3_area.style.display='none';
+        q1_area.style.display='flex';
+    }
+
+
+// q1_area.classList.toggle('question_area_show');
 let q1_input=document.getElementById("q1_input");
 console.log(q1_input);
 let input=q1_input.value;
@@ -28,8 +39,17 @@ q1_btn.addEventListener('click',()=>{
 question_1.addEventListener('click',q1);
 
 function q2(){
-    const q2_area=document.querySelector(".question_2");
-    q2_area.classList.toggle("question_area_show");
+    if(q1_area.style.display!='none'){
+        q1_area.style.display='none';
+        q2_area.style.display='flex';
+        
+    } 
+    else if(q3_area.style.display!='none'){
+        q3_area.style.display='none';
+        q2_area.style.display='flex';
+    }
+    // q2_area.classList.toggle("question_area_show");
+    
     document.getElementById("q2_btn").addEventListener('click',()=>{
         const q2_input=prompt("enter the value to push into the array !");
         const array=document.getElementById("array");
@@ -46,8 +66,17 @@ function q2(){
 question_2.addEventListener('click',q2);
 
 function q3(){
-    const q3_area=document.querySelector(".question_3");
-    q3_area.classList.toggle('question_area_show');
+    if(q1_area.style.display!='none'){
+        q1_area.style.display='none';
+        q3_area.style.display='flex';
+        
+    } 
+    else if(q2_area.style.display!='none'){
+        q2_area.style.display='none';
+        q3_area.style.display='flex';
+    }
+    
+    // q3_area.classList.toggle('question_area_show');
 
     // acces the buttons
     const name_btn=document.getElementById("name3");
