@@ -68,22 +68,25 @@ function q3(){
         document.getElementById("query").style.display='block';
         let ampm="AM";
         let date=new Date()
-        const hours=date.getHours();
+        let hour=date.getHours();
         const minutes=date.getMinutes();
         const time= document.getElementById("time");
-        if(hours>=9 && hours<=17){
+        console.log(hour)
+        if(hour>=9 && hour<=24 ){
             time.style.display="block";
+            
         }
-        if(hours>12 && hours<=24){
-            hours=hours%12;
+        if(hour>12 && hour<=24){
+            hour= hour % 12;
             ampm="PM";
         }
-        if(hours<=9){
-            hours="0"+hours;
+        if(hour<=9){
+            hour="0"+hour;
         }
+        console.log(hour)
        
 
-        time.innerText=hours+":"+minutes+' '+ampm;
+        time.innerText=hour+":"+minutes+' '+ampm;
         
     })
 }
